@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/gruppe_11a.css" />
+  </head>
+  <body>
+    <button class="tilbake" onclick="document.location='index.html'">
+      Tilbake
+    </button>
+
+    <h1 class="navn">Mehmet</h1>
+    <div class="beskrivelse_tekst"><h1>Kort beskrivelse</h1></div>
+
+    <p class="beskrivelse">
+      Jeg er Mehmet Turker Tuncer. Jeg er fra Tyrkia. Jeg fullførte 2
+      fakulteter. Jeg jobbet som politisjef i 10 år. Jeg har vært i Norge i 4
+      år. Jeg liker å kode. Jeg har kunnskap om HTML, Css, Java. Jeg prøver å
+      forbedre kodingen min ved å følge nettkurs. Jeg planlegger å jobbe som
+      fullstack-utvikler i nær fremtid. Den delen jeg hadde vanskeligheter med i
+      kurset var at det var vanskelig å finne tilstrekkelig dokumentasjon om
+      pyret. Jeg synes imidlertid IS114 er et nyttig kurs for studenter.
+    </p>
+    <br />
+    <h1 class="navn">Klimafotavtrykk</h1>
+
+    <table class="tablecenter">
+      <tr>
+        <th>komponent</th>
+        <th>energi</th>
+      </tr>
+      <tr>
+        <td>bil</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>fly</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>ovn</td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td>lys</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>dingser</td>
+        <td>5</td>
+      </tr>
+
+      <tr>
+        <td>mlk</td>
+        <td>10</td>
+      </tr>
+
+      <tr>
+        <td>varer</td>
+        <td>60</td>
+      </tr>
+
+      <tr>
+        <td>varertransport</td>
+        <td>20</td>
+      </tr>
+
+      <tr>
+        <td>offtjen</td>
+        <td>4</td>
+      </tr>
+    </table>
+    <!-- Grafikk Med Pyret -->
+    <div style="display: inline-block; margin-left: 200px">
+      <img
+        style="
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 80px;
+        "
+        src="images/grafikkYeni.png"
+        alt=""
+        srcset=""
+      />
+      <p style="text-align: center">
+        <a
+          style="color: white"
+          href="https://github.com/MehmetTurkerTuncer-UIA/Klimafotavtrykk-med-Pyret"
+          target="_blank"
+          >Klimafotavtrykk med Pyret - Gå til Github Repo</a
+        >
+      </p>
+    </div>
+    <!-- Grafikk Med d3JS -->
+    <div style="display: inline-block; margin-right: 200px">
+      <div id="my_dataviz"></div>
+      <p style="text-align: center; color: white">Klimafotavtrykk med d3 JS</p>
+    </div>
+
+    <br />
+    <p class="beskrivelse">
+      Den største grunnen til kriger i verden i dag er å kontrollere
+      energiressurser. 'I Norge er energibruken mye større enn globalt
+      gjennomsnitt. I 2017 var vårt netto strømforbruk 124,8 TWh, som er 23500
+      kWh per person.'(Jacobsen, 2019). Den viktigste årsaken til dette er at
+      oppvarmingen i boliger leveres av strøm. 'En vanlig norsk enebolig bruker
+      cirka 20 tusen kWh strøm per år.'(Jacobsen, 2019). Vi trenger energibruk i
+      nesten alle kjøretøy vi bruker i våre liv. Vi bruker energi i alle typer
+      transportkjøretøyer som biler, skip, fly, oppvarming, ovner, belysning,
+      fabrikker og mange andre områder. Vi kan ta forholdsregler som å bruke
+      energisparende produkter, styrke den termiske isolasjonen i hjemmet vårt,
+      bruke solcellepaneler, gå eller sykle i stedet for å bruke et
+      motorkjøretøy, og bruke offentlig transport.
+    </p>
+
+    <div class="beskrivelse"></div>
+    <div style="display: inline-block">
+      <p>FIGURE MED CANVAS</p>
+      <!-- Figure Med CANVAS -->
+      <canvas id="mehmetCanvas"></canvas>
+    </div>
+    <!-- Figure Med SVG -->
+    <div style="display: inline-block">
+      <p>FIGURE MED SVG</p>
+      <svg id="svg_sirkel">
+        <circle
+          id="sirk"
+          cx="130"
+          cy="100"
+          r="83"
+          stroke="white"
+          stroke-width="1"
+          fill="white"
+        />
+        <circle
+          id="sirk"
+          cx="157"
+          cy="100"
+          r="60"
+          stroke="#0099FF"
+          stroke-width="1"
+          fill="#0099FF"
+        />
+        <circle
+          id="sirk"
+          cx="277"
+          cy="100"
+          r="83"
+          stroke="white"
+          stroke-width="1"
+          fill="white"
+        />
+        <circle
+          id="sirk"
+          cx="250"
+          cy="100"
+          r="60"
+          stroke="#0099FF"
+          stroke-width="1"
+          fill="#0099FF"
+        />
+        <polyline
+          points="205,75 220,125 180,95 230,95 190,125 205,75"
+          style="fill: white; stroke: white; stroke-width: 1"
+        />
+      </svg>
+    </div>
+
+    <!-- Repo til Figure Med Pyret -->
+    <div style="display: inline-block; margin-bottom: 50px">
+      <p>
+        <a
+          style="color: white"
+          href="https://github.com/MehmetTurkerTuncer-UIA/KreativeFigurMedPyret.git"
+          target="_blank"
+          >FIGURE MED PYRET - GÅ TIL GITHUB REPOSITORY</a
+        >
+      </p>
+
+      <!-- Figure Med Pyret -->
+      <img style="margin-left: 30px" src="images/pyretFigur.jpg" alt="" />
+    </div>
+
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="js/mehmet.js"></script>
+  </body>
+</html>

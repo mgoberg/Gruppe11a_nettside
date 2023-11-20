@@ -1,0 +1,282 @@
+::selection {
+  background: rgb(0, 172, 202);
+}
+body {
+  background-color: #003049;
+}
+
+.overskrift {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 50px;
+  padding: 5px;
+  text-shadow: 1px 1px 1px black;
+}
+.underoverskrift {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(194, 193, 193);
+  text-align: center;
+  font-size: 25px;
+  padding: 5px;
+  text-shadow: 1px 1px 1px black;
+}
+.figurer {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 40px;
+  padding: 0px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.bokser {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  max-width: 1200px;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: 300px 270px;
+  grid-auto-rows: 300px;
+  justify-content: center;
+  margin: auto;
+}
+
+.bokser > div {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  font-size: 2em;
+  color: #ffffff;
+  border-radius: 10px;
+  text-shadow: 2px 2px 2px black;
+  border: 1px solid white;
+}
+
+.bokser > div {
+  background-color: #003049;
+  box-shadow: 1px 2px 2px rgb(22, 21, 21);
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #003049;
+  padding: 10px;
+}
+.nav {
+  text-align: center;
+  margin: 0 10px;
+}
+.rounded-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 5px;
+  box-shadow: 1px 6px 6px rgb(22, 21, 21);
+}
+.bilde-forside {
+  border-radius: 50%;
+}
+.navn-forside {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+.rounded-image:hover {
+  box-shadow: 5px 10px 6px rgb(22, 21, 21);
+}
+.hvit-linje {
+  width: 100%;
+  height: 1%;
+  border-bottom: 1px solid white;
+  margin: 0px;
+  padding: 0px;
+}
+.om-oss {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  text-shadow: 1px 1px 1px black;
+}
+.om-oss-overskrift {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 50px;
+  padding: 0px;
+  text-shadow: 1px 1px 1px black;
+  margin: 20px;
+}
+.navn {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 50px;
+  padding: 0px;
+  margin-top: 0px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.beskrivelse_tekst {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  text-shadow: 1px 1px 1px black;
+}
+.tilbake {
+  background-color: #52686c;
+  border: black;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  justify-content: center;
+  margin: auto;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-weight: Bold;
+}
+.tilbake:hover {
+  box-shadow: 1px 6px 6px rgb(22, 21, 21);
+}
+.bilde {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0px;
+  display: block;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.hvit-linje {
+  width: 100%;
+  height: 1%;
+  border-bottom: 1px solid white;
+  margin: 0px;
+  padding: 0px;
+}
+.hvit-linje-personlig {
+  width: 100%;
+  height: 1%;
+  border-bottom: 1px solid white;
+  margin: 20px;
+  padding: 0px;
+}
+.box {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.box-image {
+  width: 300px; /* Adjust image width as needed */
+  height: 300px; /* Adjust image height as needed */
+  display: block;
+  border-radius: 8px;
+}
+
+.box-text {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7); /* Background color for text */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.knapp-pyret-kode {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 10px;
+}
+.begge-box {
+  align-items: center;
+  justify-content: center;
+  position: center;
+  text-align: center;
+}
+.Utslipps-tabell {
+  width: 50%;
+  text-align: center;
+}
+.graf {
+  width: 50%;
+  text-align: center;
+}
+.utslipp-og-graf {
+  display: flex;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+img {
+  width: 300px;
+  height: 200px;
+}
+
+#mehmetCanvas {
+  width: 390px;
+  height: 200px;
+  background-color: #0099ff;
+  border-radius: 5px;
+}
+#martinCanvas {
+  width: 390px;
+  height: 200px;
+  background-color: #003049;
+  border-radius: 5px;
+}
+#amundCanvas {
+  width: 390px;
+  height: 200px;
+  background-color: #003049;
+  border-radius: 5px;
+}
+#lenaCanvas {
+  width: 390px;
+  height: 200px;
+  background-color: #003049;
+  border-radius: 5px;
+}
+#theaCanvas {
+  width: 390px;
+  height: 200px;
+  background-color: #003049;
+  border-radius: 5px;
+}
+#martinCanvas {
+  width: 390px;
+  height: 200px;
+  background-color: #003049;
+  border-radius: 5px;
+}
+
+#svg_sirkel {
+  width: 390px;
+  height: 200px;
+  background-color: #003049;
+}
+
+.overskrift-bokser {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px black;
+}

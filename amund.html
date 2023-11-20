@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <link rel="stylesheet" href="css/gruppe_11a.css" />
+    <button class="tilbake" onclick="document.location='index.html'">
+      Tilbake
+    </button>
+    <img class="bilde" src="/images/amund.png" alt="Amund" />
+    <h1 class="navn">Amund</h1>
+    <div class="hvit-linje-personlig">-</div>
+    <div class="beskrivelse_tekst">
+      Jeg er 26 år og kommer fra Mandal. Ved siden av studiet,
+    </div>
+    <div class="beskrivelse_tekst">
+      jobber jeg på infografikk. På fritiden liker jeg å trene og game.
+    </div>
+    <div class="hvit-linje-personlig">-</div>
+    <div class="begge-box">
+      <div class="box">
+        <div class="box-text">Canvas API</div>
+        <div>
+          <canvas id="amundCanvas"></canvas>
+        </div>
+      </div>
+      <div class="box">
+        <svg width="300" height="200">
+          #Outer ellipse
+          <ellipse cx="150" cy="100" rx="44" ry="69" fill="black" />
+
+          #Inner ellipse
+          <ellipse cx="150" cy="100" rx="40" ry="65" fill="lightsteelblue" />
+          #Rectangles Inner
+          <rect
+            x="130"
+            y="92"
+            width="37"
+            height="13"
+            stroke="blue"
+            fill="black"
+          />
+          <rect
+            x="142"
+            y="80"
+            width="13"
+            height="38"
+            stroke="blue"
+            fill="black"
+          />
+          <rect
+            x="135"
+            y="180"
+            width="25"
+            height="25"
+            stroke="black"
+            fill="black"
+          />
+        </svg>
+        <div class="box-text">SVG</div>
+      </div>
+      <div class="knapp-pyret-kode">
+        <button class="tilbake" onclick="document.location='index.html'">
+          Github Repository for Pyret koden
+        </button>
+        <br />
+      </div>
+      <div class="hvit-linje-personlig">-</div>
+    </div>
+    <h1 class="navn">Mitt Utslipp</h1>
+    <div class="utslipp-og-graf">
+      <div class="Utslipps-tabell">
+        <p>Bilde av Tabell kommer her</p>
+      </div>
+      <div class="graf">
+        <p>Bilde av Graf kommer her</p>
+      </div>
+    </div>
+    <script type="module" src="js/figures.js"></script>
+    <script type="module" src="js/amund.js"></script>
+  </body>
+</html>
