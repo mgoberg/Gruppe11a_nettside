@@ -61,7 +61,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #003049;
+  background: rgba(76, 175, 80, 0);
   padding: 10px;
 }
 .nav {
