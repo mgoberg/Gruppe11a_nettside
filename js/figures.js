@@ -22,6 +22,18 @@ const funksjoner = {
     firkant.fillStyle = farge;
     firkant.fill();
   },
+  firkantSVG: function (x, y, bredde, høyde, outline, farge, navn) {
+    const svgNS = "https://www.w3.org/2000/svg";
+    const firkantSVG = document.createElementNS(svgNS, "navn");
+    firkantSVG.setAttribute("x", x);
+    firkantSVG.setAttribute("y", y);
+    firkantSVG.setAttribute("width", bredde);
+    firkantSVG.setAttribute("height", høyde);
+    firkantSVG.setAttribute("stroke", outline);
+    firkantSVG.setAttribute("fill", farge);
+    const svgCanvas = document.getElementById(navn);
+    return firkantSVG;
+  },
   // Her har vi laget en funksjon for å lage trekant.
   trekant: function (x, y, x1, y1, x2, y2, farge, navn) {
     var canvas = document.getElementById(navn);
