@@ -231,6 +231,11 @@ body {
 .utslipp-og-graf {
   display: flex;
 }
+
+.Amund_Graf {
+  width: 400px;
+  height: 300px;
+}
 p {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(255, 255, 255);
