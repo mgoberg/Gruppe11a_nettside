@@ -1,6 +1,7 @@
 "use strict";
-//Sirkel
+//Lager en const for alle funksjonene sånn at man kan pakke den opp og sende den til andre javascript filer.
 const funksjoner = {
+  //Her har vi laget en funksjon for å lage en sirkel.
   sirkel: function (x, y, radius, farge, navn) {
     var canvas = document.getElementById(navn);
     var sirkel = canvas.getContext("2d");
@@ -11,7 +12,7 @@ const funksjoner = {
     sirkel.fillStyle = farge;
     sirkel.fill();
   },
-
+  // Her har vi laget en funksjon for å lage firkant / rektangel.
   firkant: function (x, y, lengde, bredde, rotering, farge, navn) {
     var canvas = document.getElementById(navn);
     var firkant = canvas.getContext("2d");
@@ -21,7 +22,7 @@ const funksjoner = {
     firkant.fillStyle = farge;
     firkant.fill();
   },
-
+  // Her har vi laget en funksjon for å lage trekant.
   trekant: function (x, y, x1, y1, x2, y2, farge, navn) {
     var canvas = document.getElementById(navn);
     var trekant = canvas.getContext("2d");
@@ -33,6 +34,7 @@ const funksjoner = {
     trekant.fillStyle = farge;
     trekant.fill();
   },
+  // Denne funksjoner danner en sirkel som tar lengde og bredde, slik at vi kan lage en ellipse.
   ellipse: function (
     x,
     y,
@@ -62,8 +64,5 @@ const funksjoner = {
   },
 };
 
-// Bruk funksjonen med koordinater og ønsket farge
+// Eksporterer funksjonene fra konstanten.
 export default funksjoner;
-//Rektangel
-
-//Stjerne
