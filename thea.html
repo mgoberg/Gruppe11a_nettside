@@ -5,7 +5,7 @@
     <button class="tilbake" onclick="document.location='index.html'">
       Tilbake
     </button>
-    <img class="bilde" src="/images/thea.png" alt="Thea" />
+    <img class="bilde" src="./images/thea.png" alt="Thea" />
     <h1 class="navn">Thea</h1>
     <div class="hvit-linje-personlig">-</div>
     <div class="beskrivelse_tekst">Jeg er 20 år gammel og kommer fra Oslo.</div>
@@ -21,12 +21,15 @@
         </div>
       </div>
       <div class="box">
-        SVG HER
+        <svg width="300" height="200">
+          <path d="M 100 10 L 40 120 L 160 120 Z" fill="gold"/>
+          <path d="M 100 150 L 40 50 L 160 50 Z" fill="gold"/>
+        </svg>
         <div class="box-text">SVG</div>
       </div>
       <div class="knapp-pyret-kode">
-        <button class="tilbake" onclick="document.location='index.html'">
-          Github Repository for Pyret koden
+        <button class="tilbake" onclick="window.location.href='https://github.com/SveleThea/progoblig-03-figur.git'">
+          Github Repository for Pyret kodens
         </button>
         <br />
       </div>
@@ -35,10 +38,14 @@
     <h1 class="navn">Mitt Utslipp</h1>
     <div class="utslipp-og-graf">
       <div class="Utslipps-tabell">
-        <p>Bilde av Tabell kommer her</p>
-      </div>
+          <p>Her ser vi mitt utslipp. </p>
+          <p>Tallene er funnet fra en klimaavtrykks kalkulator. </p>
+          <p>I kalkulatoren huker du av på de forskjellige punktene som passer din livsstil.</p>
+          <p>Hvis du vil regne ditt klimaavtrykk har jeg en lenke under: </p>
+          <a class="tilbake" href="https://openfootprint.ducky.eco/">Kalkulator</a>
+        </div>
       <div class="graf">
-        <p>Bilde av Graf kommer her</p>
+        <img class="Thea-graf" src="images/grafThea.png"/>
       </div>
     </div>
     <script type="module" src="js/figures.js"></script>
