@@ -3,24 +3,24 @@
 const funksjoner = {
   //Her har vi laget en funksjon for å lage en sirkel.
   sirkel: function (x, y, radius, farge, navn) {
-    var canvas = document.getElementById(navn);
-    var sirkel = canvas.getContext("2d");
+    var canvas = document.getElementById(navn); // Canvas ID på gruppemedlemmet
+    var sirkel = canvas.getContext("2d"); // 2d rendering
 
-    sirkel.beginPath();
-    sirkel.arc(x, y, radius, 0, 2 * Math.PI);
-    sirkel.stroke();
-    sirkel.fillStyle = farge;
-    sirkel.fill();
+    sirkel.beginPath(); // Starter tegningen
+    sirkel.arc(x, y, radius, 0, 2 * Math.PI); // Tegner sirkel
+    sirkel.stroke(); // Sort outline
+    sirkel.fillStyle = farge; //Fyll farge
+    sirkel.fill(); // Fyller med fargen.
   },
   // Her har vi laget en funksjon for å lage firkant / rektangel.
   firkant: function (x, y, lengde, bredde, rotering, farge, navn) {
-    var canvas = document.getElementById(navn);
-    var firkant = canvas.getContext("2d");
-    firkant.beginPath();
-    firkant.rect(x, y, lengde, bredde);
-    firkant.stroke();
-    firkant.fillStyle = farge;
-    firkant.fill();
+    var canvas = document.getElementById(navn); // Canvas ID på gruppemedlemmet
+    var firkant = canvas.getContext("2d"); // 2d rendering
+    firkant.beginPath(); // Starter tegningen
+    firkant.rect(x, y, lengde, bredde); // Posisjon og dimensjonene til et rektangel
+    firkant.stroke(); // Sort outline
+    firkant.fillStyle = farge; //Fyll farge
+    firkant.fill(); // Fyller med fargen.
   },
   firkantSVG: function (x, y, bredde, høyde, outline, farge, navn) {
     const svgNS = "https://www.w3.org/2000/svg";
@@ -36,17 +36,19 @@ const funksjoner = {
   },
   // Her har vi laget en funksjon for å lage trekant.
   trekant: function (x, y, x1, y1, x2, y2, farge, navn) {
-    var canvas = document.getElementById(navn);
-    var trekant = canvas.getContext("2d");
+    var canvas = document.getElementById(navn); // Canvas ID på gruppemedlemmet
+    var trekant = canvas.getContext("2d"); // 2d rendering
 
-    trekant.beginPath();
-    trekant.moveTo(x, y);
-    trekant.lineTo(x1, y1);
-    trekant.lineTo(x2, y2);
-    trekant.fillStyle = farge;
-    trekant.fill();
+    trekant.beginPath(); // Starter tegningen
+    trekant.moveTo(x, y); // Sub path for å lage flere streker
+    trekant.lineTo(x1, y1); // Tegner strek fra x og y til x1 og y1
+    trekant.lineTo(x2, y2); // Tegner strek fra x1 og y1 til x2 og y2
+    trekant.stroke(); // Sort outline
+    trekant.fillStyle = farge; //Fyll farge
+    trekant.fill(); // Fyller med fargen.
   },
   // Denne funksjoner danner en sirkel som tar lengde og bredde, slik at vi kan lage en ellipse.
+  // Denne funksjonen tar litt mange inputs, så den blir formattert litt rart av prettier extention.
   ellipse: function (
     x,
     y,
@@ -57,10 +59,10 @@ const funksjoner = {
     farge,
     navn
   ) {
-    var canvas = document.getElementById(navn);
-    var ellipse = canvas.getContext("2d");
+    var canvas = document.getElementById(navn); // Canvas ID på gruppemedlemmet
+    var ellipse = canvas.getContext("2d"); // 2d rendering
 
-    ellipse.beginPath();
+    ellipse.beginPath(); // Starter tegningen
     ellipse.ellipse(
       x,
       y,
@@ -69,12 +71,12 @@ const funksjoner = {
       rotasjon,
       startvinkel,
       2 * Math.PI
-    );
-    ellipse.stroke();
-    ellipse.fillStyle = farge;
-    ellipse.fill();
+    ); // Her tegner vi sirkel med en x og en y verdi i lengde og bredde, så vi kan lage en oval.
+    ellipse.stroke(); // Sort outline
+    ellipse.fillStyle = farge; //Fyll farge
+    ellipse.fill(); // Fyller med fargen.
   },
 };
 
-// Eksporterer funksjonene fra konstanten.
+// Eksporterer funksjonene fra konstanten som heter funksjoner.
 export default funksjoner;
