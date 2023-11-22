@@ -1,6 +1,7 @@
 "use strict";
 //Lager en const for alle funksjonene sånn at man kan pakke den opp og sende den til andre javascript filer.
 const funksjoner = {
+  //pakker funksjonene inn i et objekt med funksjonene som metoder.
   //Her har vi laget en funksjon for å lage en sirkel.
   sirkel: function (x, y, radius, farge, navn) {
     var canvas = document.getElementById(navn); // Canvas ID på gruppemedlemmet
